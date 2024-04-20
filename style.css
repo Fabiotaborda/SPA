@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+
+}
+
+:root {
+    font-size: 62.5%;
+
+    --text-color: #FFF;
+    --secundary-color: #02799D;
+}
+
+header {
+    position: fixed;
+}
+
+header div{
+    display: flex;
+    padding: 4rem 0 0 7.2rem;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+nav { 
+    display: flex;
+    gap: 3.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 2rem; 
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.active {
+    opacity: 1;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 2.4rem;
+  
+    background-image: url(assets/bg1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#home {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+#home button {
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+    cursor: pointer;
+}
+
+#home button:hover {
+    color: var(--secundary-color);
+
+    border: 2px solid var(--text-color);
+    background: var(--text-color);
+}
+
+
+#universe, #exploration{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-left: 10rem;
+    padding-top: 19.5rem;
+}
+
+#universe p, #exploration p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 160%;
+
+    width: 64.8rem;
+}
+
+/* universe */
+
+#universe {
+    width: 100vw;
+    height: 100vh;
+  
+    background-image: url('/assets/bg2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* exploration */
+
+#exploration {
+    width: 100vw;
+    height: 100vh;
+  
+    background-image: url('/assets/bg3.png');
+    background-position: center;
+    background-size: cover;
+}
